@@ -8,14 +8,11 @@ sleep 2
 echo "..."
 sleep 2
 echo "We start to generted password"
-head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13 ; echo '' > password.txt
+head /dev/urandom | tr -dc A-Za-z0-9 | head -c 13 ; echo '' 
  if [ $? -ne 0 ]; then 
   echo "hmm ... sorry try agian"
   exit 1
  else
-  echo "DONE!!!"
-  echo "You password is in password.txt"
-  echo password.txt
-  sleep 3
-  echo "buy"
+  sleep 2
+  echo "bye"
  fi
